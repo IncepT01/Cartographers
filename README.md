@@ -1,0 +1,1 @@
+Egy egyszerűsített verziója a Cartographers nevű társasjátéknak.

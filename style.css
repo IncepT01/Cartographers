@@ -1,0 +1,98 @@
+table, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+
+body{
+    max-width: 85%;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    background-image: url("./images/background2.jpg");
+}
+
+#startGameButton{
+    font-size: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#title{
+    display:  none;
+    text-align: left;
+    font-size: 44px;
+    margin-left: 15%;
+}
+
+#mainGameDiv{
+    margin-left: 15%;
+    display: none;
+}
+
+#gameBoard{
+    margin-top: 7%;
+    background-color: bisque;
+    float: left;
+}
+#seasonsDiv{
+    float: left;
+    max-width: 25%;
+    margin: 1%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#missionsDiv{
+    float: left;
+    max-width: 30%;
+    max-height: 10%;
+    margin: 1%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#nextPieceDiv{
+    float: left;
+    margin: 1%;
+    margin-left: 10%;
+}
+
+#nextPiece{
+    margin: 3%;
+}
+
+#missions{
+    background-color: rgb(192, 192, 192);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10%;
+    
+}
+
+#mission1TD,#mission2TD,#mission3TD,#mission4TD{
+    width: 170px; border: 8px solid rgb(90, 90, 90);
+}
+
+#mission1Title,#mission2Title,#mission3Title,#mission4Title{
+    font-size: 1.1rem;
+    margin-block-end: 0rem; 
+    margin-block-start: 0rem;
+    text-decoration: underline;
+    margin: 3%;
+}
+
+#mission1,#mission2,#mission3,#mission4{
+    font-size: 0.9rem;
+    margin-block-end: 0rem; 
+    margin-block-start: 0rem;
+}

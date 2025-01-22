@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Burgonyatérkép</title>
+</head>
+<body>
+
+    <div>
+        <button id="startGameButton"><b>játék indítása</b></button>
+        <p id="title"><b>Burgonyatérkép</b></p>
+    </div>
+    <div id="mainGameDiv">
+        <table id="gameBoard"></table>
+        <div id="seasonsDiv">
+            <table>
+                <tr>
+                    <td style="background-color: rgb(24, 208, 0); width: 100px;"><b>Tavasz:</b><br><b id="springPointsText">0 pont</b></td>
+                    <td style="background-color: rgb(244, 191, 0); width: 100px;"><b>Nyár:</b><br><b id="summerPointsText">0 pont</b></td>
+                    <td style="background-color: burlywood; width: 100px; padding: 1%;"><b>Ősz:</b><br><b id="fallPointsText">0 pont</b></td>
+                    <td style="background-color: lightblue; width: 100px; padding: 1%;"><b>Tél:</b><br><b id="winterPointsText">0 pont</b></td>
+                </tr>
+            </table>
+            <p style="margin-block-end: 0rem;"><b id="pointsText">Összesen: 0 pont</b></p>
+            <p style="margin-block-end: 0rem; margin-block-start: 0rem;"><b id="currentSeasonText">Jelenlegi évszak: Tavasz</b></p>
+        </div>
+        <div id="missionsDiv">
+            <table id="missions">
+                <tr>
+                    <td id="mission1TD">
+                        <p id="mission1Title"></p>
+                        <br>
+                        <p id="mission1"></p>
+                        <p id="mission1Point"></p>
+                    </td>
+                    <td id="mission2TD">
+                        <p id="mission2Title"></p>
+                        <br>
+                        <p id="mission2"></p>
+                        <p id="mission2Point"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="mission3TD">
+                        <p id="mission3Title"></p>
+                        <br>
+                        <p id="mission3"></p>
+                        <p id="mission3Point"></p>
+                    </td>
+                    <td id="mission4TD">
+                        <p id="mission4Title"></p>
+                        <br>
+                        <p id="mission4"></p>
+                        <p id="mission4Point"></p>
+                    </td>
+                </tr>
+            </table>
+            <p style="margin-block-end: 0rem; font-size: 1.2rem;"><b id="timeLeftText">Évszakból hátralévő idő: 7/7</b></p>
+        </div>
+
+        <div id="nextPieceDiv">
+            <p style="margin-block-start: 0rem; font-size: 1.2rem;"><b>Lehelyezendő elem:</b></p>
+            <table style="background-color: rgb(197, 197, 197);">
+                <tr>
+                    <td style="width: 130px">
+                        <button id="rotateButton">Forgatás</button>
+                        <button id="mirrorButton" style="margin-top: 10%;">Tükrözés</button>
+                        <button id="noSpaceButton" style="margin-top: 10%;">Új elem kérése<br>(+1 idő büntetés)</button>
+                        <p><b id="timeToPlaceText">Lehelyezéshez szükséges idő: 2</b></p>
+                    </td>
+                    <td style="width: 200px;"><table id="nextPiece"></table></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
